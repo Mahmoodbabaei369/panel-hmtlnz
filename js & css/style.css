@@ -1,0 +1,57 @@
+@font-face {
+font-family: 'man';
+src : url('fonts/YekanBakh-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'man', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0; /* قرار دادن سایدبار در سمت راست */
+    width: 250px;
+    background-color: #4400ff;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+.sidebar a:hover {
+    background-color: #4400ff;
+}
+.sidebar .dropdown-menu {
+    background-color: #4400ff;
+}
+.navbar {
+    background-color: #4400ff;
+    padding: 0 20px;
+}
+.navbar-brand img {
+    height: 40px;
+}
+.dropdown-menu {
+    min-width: 160px;
+}
+.content {
+    margin-right: 250px; /* فاصله محتوای اصلی از سایدبار */
+    padding: 20px;
+}
+.dropdown-item {
+    padding: 10px;
+}
